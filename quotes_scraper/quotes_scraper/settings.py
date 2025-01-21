@@ -12,6 +12,10 @@ BOT_NAME = "quotes_scraper"
 SPIDER_MODULES = ["quotes_scraper.spiders"]
 NEWSPIDER_MODULE = "quotes_scraper.spiders"
 
+FEEDS = {
+    "quotes.json": {"format": "json", "encoding": "utf-8"},
+    "authors.json": {"format": "json", "encoding": "utf-8"},
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "quotes_scraper (+http://www.yourdomain.com)"
